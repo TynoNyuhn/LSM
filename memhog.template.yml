@@ -16,8 +16,8 @@ spec:
     - name: memhog
     # Docker-in-Docker
       image: ghcr.io/hpcclab/live_service_migration/memhog:main
-    # Fast-Freeze 
-      image: ghcr.io/hpcclab/live_service_migration/memhogff:main
+#     Fast-Freeze 
+#     image: ghcr.io/hpcclab/live_service_migration/memhogff:main
       imagePullPolicy: Always
       env:
         - name: MEMORY_REQUEST
