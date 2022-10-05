@@ -23,7 +23,7 @@ spec:
         - name: MEMORY_REQUEST
           value: '0'
         - name: MEMORY_LIMIT
-          value: '1024'
+          value: '128'
         - name: MEMORY_INCREMENT
           value: '128'
         - name: SHOULD_CONTINUE
