@@ -25,7 +25,7 @@ spec:
         - name: MEMORY_LIMIT
           value: '128'
         - name: MEMORY_INCREMENT
-          value: '128'
+          value: '0'
         - name: SHOULD_CONTINUE
           value: 'true'
         # - name: PATTERN
