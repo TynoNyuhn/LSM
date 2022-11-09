@@ -6,7 +6,7 @@ metadata:
     app: memhog
 #  namespace: myproject
   annotations:
-    migration-interface: 'pind'
+    migration-interface: 'dind'
 #     migration-start-mode: 'null'
 spec:
   serviceAccountName: migration-coordinator
