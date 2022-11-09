@@ -42,7 +42,7 @@ spec:
             - configMapRef:
                 name: migration-env
           env:
-            - name: INTERFACE_HOST
+            - name: HOST_NAME
               value: 34.171.128.48
           startupProbe:
             httpGet:
