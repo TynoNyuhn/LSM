@@ -5,4 +5,4 @@ metadata:
   namespace: kube-system
 data:
   upstreamNameservers: |
-  ["146.75.106.132"]
+  ["8.8.8.8"]
