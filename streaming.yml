@@ -15,7 +15,7 @@ spec:
         - containerPort: 80
       env:
         - name: DEFAULT_UPSTREAM
-          value: 20.121.139.124
+          value: test-streams.mux.dev
       imagePullPolicy: "Always"
 ---
 apiVersion: v1
