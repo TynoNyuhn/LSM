@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name:
+    migration-interface
+spec:
+  containers:
+    - name: migration-interface
+      image: ghcr.io/tynonyuhn/migration-interface:main
+      imagePullPolicy: Always
+      env:
+        - name: REACT_APP_GKE_IP
+          value: '34.171.128.48'
+        - name: REACT_APP_AKS_IP
+          value: '20.121.139.124'
