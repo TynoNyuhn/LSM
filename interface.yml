@@ -6,7 +6,6 @@ metadata:
   labels:
     app: migration-interface
    annotations:
-    migration-bypass: 'True'
 spec:
   replicas: 1
   strategy:
