@@ -6,6 +6,8 @@ metadata:
   labels:
     app: 
       migration-interface
+  namespace:
+    default
   annotations:
 spec:
   replicas: 1
