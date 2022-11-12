@@ -28,15 +28,13 @@ spec:
         - name: interface
           image: ghcr.io/tynonyuhn/migration-interface:main
           ports:
-            - containerPort: 5001
+            - containerPort: 80
           imagePullPolicy: Always
           env:
             - name: REACT_APP_GKE_IP
               value: '34.171.128.48'
             - name: REACT_APP_AKS_IP
               value: '20.121.139.124'
-          ports:
-            - containerPort: 80
 #         startupProbe:
 #           httpGet:
 #             port: 5001
