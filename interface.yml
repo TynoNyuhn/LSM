@@ -22,21 +22,21 @@ spec:
         app: migration-interface
       annotations:
         migration-bypass: 'True'
-  spec:
-    serviceAccountName: migration-interface
-    containers:
-      - name: interface
-        image: ghcr.io/tynonyuhn/migration-interface:main
-        ports:
-          - containerPort: 5001
-        imagePullPolicy: Always
-        env:
-          - name: REACT_APP_GKE_IP
-            value: '34.171.128.48'
-          - name: REACT_APP_AKS_IP
-            value: '20.121.139.124'
-        ports:
-          - containerPort: 80
+    spec:
+      serviceAccountName: migration-interface
+      containers:
+        - name: interface
+          image: ghcr.io/tynonyuhn/migration-interface:main
+          ports:
+            - containerPort: 5001
+          imagePullPolicy: Always
+          env:
+            - name: REACT_APP_GKE_IP
+              value: '34.171.128.48'
+            - name: REACT_APP_AKS_IP
+              value: '20.121.139.124'
+          ports:
+            - containerPort: 80
 #         startupProbe:
 #           httpGet:
 #             port: 5001
