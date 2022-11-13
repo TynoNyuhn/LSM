@@ -14,8 +14,8 @@ spec:
     matchLabels:
       app: memhog
   template:
-    serviceAccountName: migration-coordinator
     spec:
+      serviceAccountName: migration-coordinator
       containers:
         - name: memhog
           image: ghcr.io/hpcclab/live_service_migration/memhog:main
