@@ -10,16 +10,17 @@ metadata:
     migration-interface: 'dind'
 #     migration-start-mode: 'null'
 spec:
-  replicas: 10
-  serviceAccountName: migration-coordinator
+  replicas: 10 
   template:
-    containers:
-      - name: memhog
-        image: ghcr.io/hpcclab/live_service_migration/memhog:main
-        env:
-          - name: MEMORY_LIMIT
-            value: '128'
-          - name: MEMORY_INCREMENT
-            value: '128'
-          # - name: PATTERN
-          #   value: migration
+    serviceAccountName: migration-coordinator
+    spec:
+      containers:
+        - name: memhog
+          image: ghcr.io/hpcclab/live_service_migration/memhog:main
+          env:
+            - name: MEMORY_LIMIT
+              value: '128'
+            - name: MEMORY_INCREMENT
+              value: '128'
+            # - name: PATTERN
+            #   value: migration
