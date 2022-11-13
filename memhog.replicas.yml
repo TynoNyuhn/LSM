@@ -9,7 +9,10 @@ metadata:
     migration-interface: 'dind'
 #     migration-start-mode: 'null'
 spec:
-  replicas: 10 
+  replicas: 10
+  selector:
+    matchLabels:
+      app: memhog
   template:
     serviceAccountName: migration-coordinator
     spec:
